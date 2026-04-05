@@ -9,9 +9,10 @@ const app = express();
 app.use(cors({
   origin: [
     'http://localhost:3000',
-    'https://aastha-portfolio.vercel.app'
+    'https://aastha-portfolio-ot2d.vercel.app'
   ]
 }));
+
 app.use(express.json());
 
 mongoose.connect(process.env.MONGO_URL, {
@@ -21,7 +22,6 @@ mongoose.connect(process.env.MONGO_URL, {
   .then(() => console.log("✅ Connected to MongoDB Atlas!"))
   .catch((err) => console.log("❌ Failed:", err.message));
 
-  
 const contactSchema = new mongoose.Schema({
   name:    { type: String, required: true },
   email:   { type: String, required: true },
