@@ -1,0 +1,138 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a1a2e;
+  padding: 15px 40px;
+}
+nav .logo {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+nav ul a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+nav ul a:hover {
+  color: #e94560;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #16213e;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+.hero h1 {
+  font-size: 48px;
+}
+.hero h1 span {
+  color: #e94560;
+}
+.hero p {
+  font-size: 20px;
+  margin: 15px 0;
+  color: #aaa;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  background-color: #e94560;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+.btn:hover {
+  background-color: #c73652;
+}
+
+/* Skills */
+.skills {
+  padding: 60px 40px;
+  text-align: center;
+  background: #f4f4f4;
+}
+.skills h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+.skill-card {
+  background: #1a1a2e;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+/* Contact Form */
+.contact-section {
+  padding: 60px 40px;
+  max-width: 600px;
+  margin: auto;
+}
+.contact-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.contact-section input,
+.contact-section textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.contact-section textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+/* Override Bootstrap hero background — Bootstrap doesn't style this */
+.hero {
+  background-color: #16213e;
+  padding: 100px 20px;
+}
+
+/* Make navbar links red on hover */
+.navbar-nav .nav-link:hover {
+  color: #e94560 !important;
+}
+
+/* Card hover effect */
+.card {
+  transition: transform 0.2s;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
