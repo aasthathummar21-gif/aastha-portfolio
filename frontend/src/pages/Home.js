@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import FloatingEmojis from '../components/FloatingEmojis';
 import aasthaPhoto from '../assets/images/aastha_2.jpg';
@@ -22,11 +22,11 @@ function Home() {
   }, []);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setRoleIndex(prev => (prev + 1) % roles.length);
-    }, 2000);
-    return () => clearInterval(interval);
-  }, []);
+  const interval = setInterval(() => {
+    setRoleIndex(prev => (prev + 1) % roles.length);
+  }, 2000);
+  return () => clearInterval(interval);
+}, [roles.length]);
 
   return (
     <div style={{
