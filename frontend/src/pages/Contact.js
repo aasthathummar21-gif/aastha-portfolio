@@ -21,7 +21,7 @@ function Contact() {
     setStatus('');
 
     try {
-      await axios.post('http://localhost:5000/contact', form);
+      await axios.post('https://aastha-portfolio-backend.onrender.com/contact', form);
       setStatus('success');
       setForm({ name: '', email: '', message: '' });
     } catch (error) {
